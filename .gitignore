@@ -1,32 +1,24 @@
-# Screeps Config
-screeps.json
-
-# Ignore basic folders
-/dist
-/node_modules
-/typings
-/.rpt2_cache
-/tsc-out
-
-# Ignore Mathematica notebooks so they don't add 50 billion lines to contribution count
-/assets/Mathematica
-
-# Ignore Overmind.ts
-/src/Overmind.ts
-
-# Ignore Assimilator.ts
-/src/assimilation/Assimilator.ts
-
 # yarn lock file
 /yarn.lock
-
-/webpack.config.js
 
 # npm lock file (v5.0.0+)
 /package-lock.json
 
-# Screeps config file
-/config.json
+# Ignore basic folders
+/dist
+/.rpt2_cache
+/tsc-out
+/node_modules
+/_book
+
+# TypeScript definitions installed by Typings
+/typings
+
+# Screeps Config
+screeps.json
+
+# ScreepsServer data from integration tests
+/server
 
 # Numerous always-ignore extensions
 *.diff
@@ -38,6 +30,7 @@ screeps.json
 *.swp
 *.zip
 *.vi
+*~
 
 # Editor folders
 .cache
@@ -96,9 +89,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# VStudio files
-applicationhost.config
-*.suo
-*.njsproj
-*.sln

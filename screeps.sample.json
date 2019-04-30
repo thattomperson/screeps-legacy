@@ -1,6 +1,6 @@
 {
   "main": {
-    "token": "YOUR_TOKEN_HERE",
+    "token": "YOUR_TOKEN",
     "protocol": "https",
     "hostname": "screeps.com",
     "port": 443,
@@ -8,12 +8,20 @@
     "branch": "main"
   },
   "sim": {
-    "token": "YOUR_TOKEN_HERE",
+    "token": "YOUR_TOKEN",
     "protocol": "https",
     "hostname": "screeps.com",
     "port": 443,
     "path": "/",
     "branch": "sim"
+  },
+  "ptr": {
+    "token": "YOUR_TOKEN",
+    "protocol": "https",
+    "hostname": "screeps.com",
+    "port": 443,
+    "path": "/ptr/",
+    "branch": "main"
   },
   "screepsplus": {
     "email": "username",
