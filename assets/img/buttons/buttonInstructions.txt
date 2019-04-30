@@ -1,8 +1,0 @@
-http://buttonoptimizer.com/
-
-base color #ffffff
-text color #111111
-font arial/helvetica, 20px
-horiz padding 18
-vert padding 4
-

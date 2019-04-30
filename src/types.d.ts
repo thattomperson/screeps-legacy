@@ -1,0 +1,3 @@
+interface IOvermind {
+  loop(): void
+}
