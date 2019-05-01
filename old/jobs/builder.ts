@@ -1,5 +1,5 @@
 
-export default function(creep, room) {
+export default function(creep: Creep, room: Room) {
   if (creep.carry.energy === 0) {
     creep.memory.filling = true;
   }
