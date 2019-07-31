@@ -1,5 +1,7 @@
 # Screeps Typescript Starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/thattomperson/screeps.svg)](https://greenkeeper.io/)
+
 Screeps Typescript Starter is a starting point for a Screeps AI written in Typescript. It provides everything you need to start writing your AI whilst leaving `main.ts` as empty as possible.
 
 ## Basic Usage
