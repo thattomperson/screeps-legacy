@@ -1,7 +1,7 @@
 "use strict";
 
 import { inHeap, inObject } from "../cache";
-import { isStructureContainer, isStructureLink } from "../utils/guards";
+import { isStructureContainer, isStructureKeeperLair, isStructureLink } from "../utils/guards";
 
 declare global {
   interface Source {
@@ -200,22 +200,25 @@ Source.prototype.getNearbyLink = function (): StructureLink | null {
  * @return {StructureKeeperLair}
  *   The lair protecting this source.
  */
-const getNearbyLair = function () {
-  const lairId = inHeap("lair:" + this.id, 150000, () => {
+const getNearbyLair = function (this: Source | Mineral): StructureKeeperLair | null {
+  const lairId = inHeap<Id<StructureKeeperLair> | undefined>(`lair:${this.id}`, 150000, () => {
     // @todo Could use old data and just check if object still exits.
     // Check if there is a lair nearby.
     const structures = this.pos.findInRange(FIND_STRUCTURES, 10, {
-      filter: structure => structure.structureType === STRUCTURE_KEEPER_LAIR
+      filter: isStructureKeeperLair
     });
     if (structures.length > 0) {
       const structure = this.pos.findClosestByRange(structures);
-      return structure.id;
+      if (structure) return structure.id;
     }
+    return;
   });
 
   if (lairId) {
     return Game.getObjectById(lairId);
   }
+
+  return null;
 };
 
 /**
