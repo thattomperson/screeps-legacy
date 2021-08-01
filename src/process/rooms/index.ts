@@ -1,0 +1,12 @@
+export { default as RoomIntelProcess } from "./process.rooms.intel";
+export { default as RoomsProcess } from "./process.rooms";
+export { default as RoomDefenseProcess } from "./process.rooms.owned.defense";
+export { default as InactiveStructuresProcess } from "./process.rooms.owned.inactive-structures";
+export { default as OwnedRoomProcess } from "./process.rooms.owned";
+export { default as ManageLabsProcess } from "./process.rooms.owned.labs";
+export { default as PositionsProcess } from "./process.rooms.owned.labs.position";
+export { default as ReactionsProcess } from "./process.rooms.owned.labs.reactions";
+export { default as ManageLinksProcess } from "./process.rooms.owned.links";
+export { default as RoomManagerProcess } from "./process.rooms.owned.manager";
+export { default as RoomSongsProcess } from "./process.rooms.owned.songs";
+export { default as ManageSpawnsProcess } from "./process.rooms.owned.spawns";

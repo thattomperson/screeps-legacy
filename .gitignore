@@ -17,6 +17,7 @@
 
 # Screeps Config
 screeps.json
+.screeps.yaml
 
 # ScreepsServer data from integration tests
 /server
@@ -90,3 +91,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+src/settings.local.ts
